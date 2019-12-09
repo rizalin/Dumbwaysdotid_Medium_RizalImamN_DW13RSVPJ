@@ -5,7 +5,8 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-
+import Link from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography';
 
 
 const useStyles = makeStyles(theme => ({
@@ -16,17 +17,17 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     backgroundColor: theme.palette.background.paper,
-    border: '2px solid #FFF',
+    border: 'none',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(1, 1, 1),
     textAlign: "center",
     flexDirection: "row",
     display: "flex",
-    marginLeft: "250px",
-    marginRight: "250px",
-    marginTop: '50px',
+   
+    padding: 'none'
   },
   isiContent: {
+    width: '300px',
     paddingLeft: '30px',
     paddingRight: '30px',
     marginTop: '5px',
@@ -56,43 +57,6 @@ const useStyles2 = makeStyles(theme => ({
   }
 }));
 
-const BootstrapButton = withStyles({
-  root: {
-    boxShadow: 'none',
-    textTransform: 'none',
-    fontSize: 16,
-    padding: '6px 12px',
-    border: '1px solid',
-    lineHeight: 1.5,
-    backgroundColor: '#007bff',
-    borderColor: '#007bff',
-    fontFamily: [
-      '-apple-system',
-      'BlinkMacSystemFont',
-      '"Segoe UI"',
-      'Roboto',
-      '"Helvetica Neue"',
-      'Arial',
-      'sans-serif',
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(','),
-    '&:hover': {
-      backgroundColor: '#0069d9',
-      borderColor: '#0062cc',
-      boxShadow: 'none',
-    },
-    '&:active': {
-      boxShadow: 'none',
-      backgroundColor: '#0062cc',
-      borderColor: '#005cbf',
-    },
-    '&:focus': {
-      boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
-    },
-  },
-})(Button);
 
 
 const ColorButton = withStyles(theme => ({
@@ -137,6 +101,7 @@ export default function TransitionsModal() {
         }}
       >
         <Fade in={open}>
+          <Typography>
           <div className={classes.paper}>
             <div>
               <img src={'https://miro.medium.com/max/214/1*MQH4A5bsyRz4AWh5V4IfvQ.png'} />
@@ -165,18 +130,16 @@ export default function TransitionsModal() {
                 </form>
               </div>
               <br></br>
-              <p style={{ fontWeight: 'bold' }}>Already have an account? <a href='/login'>Sign in</a> </p>
+              <p style={{ fontWeight: 'bold' }}>Already have an account? <Link href='/login'>Sign in</Link> </p>
               <p style={{ fontSize: '14px', color:'#757575' }}>To make Medium work, we log user data and share it with service provider. Click "Sign Up" above to accept
                   Medium's <u>Term of Service</u> and <u>Privacy Policy.</u>
               </p>
-
             </div>
             <div>
               <img src={"https://miro.medium.com/max/214/1*lhbp8cxKdkDB-MgmwIPE5w.png"} />
             </div>
-
           </div>
-
+          </Typography>
         </Fade>
       </Modal>
     </div>
