@@ -29,12 +29,12 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #FFF',
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(1, 1, 1),
+    padding: '0px',
     textAlign: "center",
     flexDirection: "row",
     display: "flex",
-    marginLeft: "300px",
-    marginRight: "300px",
+    maxWidth:'70%',
+    maxHeight: '80%'
 
   },
   isiContent: {
@@ -42,6 +42,7 @@ const useStyles = makeStyles(theme => ({
     paddingRight: '200px',
     marginTop: '20px',
     paddingTop: '0px',
+    width: '400px'
   }
 }));
 
