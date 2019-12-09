@@ -1,38 +1,103 @@
 .App {
-  text-align: center;
+  font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Geneva", Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.containers {
+  width: 80%;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 576px) {
+  .containers {
+    max-width: 540px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (min-width: 768px) {
+  .containers {
+    max-width: 720px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 992px) {
+  .containers {
+    max-width: 960px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 1200px) {
+  .containers {
+    max-width: 1140px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+}
+
+ol li {
+  counter-increment: list;
+  list-style-type: none;
+  position: relative;
+}
+
+ol li:before {
+  color: #d9d9d9;
+  content: "0" counter(list);
+  left: -50px;
+  position: absolute;
+  text-align: right;
+  width: 26px;
+  font-size: 25px;
+}
+
+.card-title {
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 800;
+  ;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 1000;
+  word-spacing: -3px;
+}
+
+h3 {
+  font-size: 15px;
+  color: #757575
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 1000;
+  word-spacing: -3px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  word-spacing: -3px;
+}
+
+p {
+  font-size: 13px;
+  color: #757575;
+  letter-spacing: 0px;
+}
+
+.black {
+  color: black;
+}
+
+.italic {
+  font-style: italic;
+  font-size: 13px;
 }
