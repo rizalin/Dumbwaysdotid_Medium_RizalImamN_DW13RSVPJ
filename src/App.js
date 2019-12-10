@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Avatar } from '@material-ui/core';
+import { Button, Media } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-function App() {
+function Follow() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <Media className='profileBr'>
+      <Avatar style={{ height: '75px', width: '75px', marginRight: '25px' }}>A</Avatar>
+      <Media.Body style={{ paddingRight: '100px' }}>
+        <h3>WRITTEN BY</h3>
+        <h2>Ryan Holiday</h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+          Bestselling author of 'Conspiracy', 'Ego is the enemy' & 'The obstacle Is The Way'
+          http://amzn.to/24qKRWR
+            </p>
+      </Media.Body>
+      <Button variant="outline-success" size="sm" style={{ marginTop: 'auto', marginBottom: 'auto' }}>Follow</Button>
+    </Media>
   );
 }
 
-export default App;
+export default Follow;

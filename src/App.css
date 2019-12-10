@@ -1,38 +1,177 @@
 .App {
+  font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Geneva", Arial, sans-serif;
+}
+
+.containers {
+  width: 100%;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .containers {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .containers {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .containers {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .containers {
+    max-width: 1200px;
+  }
+}
+
+.article {
+  width: 50%;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .containers {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .containers {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .containers {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .containers {
+    max-width: 1200px;
+  }
+}
+
+
+ol {
+  list-style-type: decimal-leading-zero;
+}
+
+ol li {
+  counter-increment: list;
+  list-style-type: none;
+  position: relative;
+}
+
+ol li:before {
+  color: #d9d9d9;
+  content: "0" counter(list);
+  left: -50px;
+  position: absolute;
+  text-align: right;
+  width: 26px;
+  font-size: 25px;
+}
+
+.konten {
+  box-shadow: inset 0px 2px 15px rgba(0, 0, 0, 0.11);
+  padding-top: 30px
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 13px;
+  color: #757575
+}
+
+p {
+  font-size: 16px;
+  
+}
+
+.black {
+  color: black;
+}
+
+.bolU {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.imgDesc{
+  margin-top: 10px;
+  color: #757575;
+  text-decoration: underline;
+  size: 12px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile {
+  height: 50px;
+  margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profilTop {
+   height: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.profilTop p {
+  font-size: 14px;
+  color: grey;
 }
 
-.App-link {
-  color: #61dafb;
+.profilTop button{
+  height: 1.4rem;
+  padding: 0px 6px;
+  margin-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.proText {
+  display: inline-flex;
+  height: 20px;
+}
+
+.MuiSvgIcon-root {
+  
+  margin: 0px 6px 0px;
+}
+
+.iconPro {
+  padding: 0px;
+  
+}
+
+.profileBr {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 0;
+  margin-top: 20px;
+  border-top: solid #f1f1f1 2px;
+  border-bottom: solid #f1f1f1 2px;
+}
+.profileBr p {
+  color: #757575;
+  font-size: 14px;
 }
