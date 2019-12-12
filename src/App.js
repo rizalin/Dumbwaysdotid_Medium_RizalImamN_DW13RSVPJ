@@ -9,6 +9,8 @@ import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import { Button, Row, Col, Media } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
+import ArticleList from './articleList';
+import Header from './header'
 
 
 const style = {
@@ -30,44 +32,7 @@ class App extends Component {
   }
 }
 
-class Header extends Component {
 
-  render() {
-
-    return (
-      <div>
-        <React.Fragment>
-
-          <div style={{ borderBottom: "solid #f1f1f1 2px" }}>
-            <div className="containers" >
-              <Grid
-                container
-                direction="row"
-                justify="space-between"
-                alignItems="center"
-              >
-                <img src={'https://medium.com/icons/monogram-mask.svg'} style={style.logo}></img>
-                <div style={{ padding: '20px 0' }}>
-                  <Grid container
-                    direction="row"
-                    justify="space-between"
-                    alignItems="center"
-                    style={{ width: '200px' }}>
-                    <SearchIcon style={{ fontSize: 25 }} />
-                    <NotificationsNoneIcon style={{ fontSize: 25 }} />
-                    <Button variant="outline-dark" size="sm" style={{ marginRight: '10px' }}>Upgrade</Button>
-                    <Avatar style={{ fontSize: '15px', height: '30px', width: '30px' }}>H</Avatar>
-                  </Grid>
-                </div>
-
-              </Grid>
-            </div>
-          </div>
-        </React.Fragment>
-      </div >
-    )
-  }
-}
 
 class Content extends Component {
 
@@ -169,48 +134,7 @@ class Content extends Component {
 
 
         <div className="article">
-          <Media className="kontenSm">
-            <Media.Body style={{ marginRight: '20px' }} >
-              <h2>Plastic Surgeons Are Using Eye-Tracking Tech to Make Better Breasts</h2>
-              <p>
-                But the eye doesn't necessarily gaze at what is beautiful
-              </p>
-              <h6 class="writerR">Owen Williams</h6>
-              <h6>Dec 10 . 5 min read</h6>
-            </Media.Body>
-            <img
-              src={"https://imgur.com/download/NCckh7t"}
-              alt="Generic placeholder"
-            />
-          </Media>
-          <Media className="kontenSm">
-            <Media.Body style={{ marginRight: '20px' }} >
-              <h2>The iPhone Could Be Banned in Russia by 2020</h2>
-              <p>
-                A 'Digital Iron Curtain' is descending over part of the world
-              </p>
-              <h6 class="writerR">Aimee Pearcy</h6>
-              <h6>Dec 6 . 5 min read</h6>
-            </Media.Body>
-            <img
-              src={"https://imgur.com/download/YmjkW6T"}
-              alt="Generic placeholder"
-            />
-          </Media>
-          <Media className="kontenSm">
-            <Media.Body style={{ marginRight: '20px' }} >
-              <h2>How to Delete Your Slack Message</h2>
-              <p>
-                If you're concerned about message retention, solutions are just a few clicked away
-              </p>
-              <h6 class="writerR">Owen Williams</h6>
-              <h6>Dec 10 . 5 min read</h6>
-            </Media.Body>
-            <img
-              src={"https://imgur.com/download/tq4oY98"}
-              alt="Generic placeholder"
-            />
-          </Media>
+          <ArticleList />
 
         </div>
       </div>
