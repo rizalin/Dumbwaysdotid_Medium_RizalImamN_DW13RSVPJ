@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Popovers from './Popover'
+import Related from './related'
 
 
 
 class App extends Component {
   render() {
     return (
-      <div className='article'>
-        <Popovers/>
+      <div>
+        <Related/>
       </div>
     );
   }

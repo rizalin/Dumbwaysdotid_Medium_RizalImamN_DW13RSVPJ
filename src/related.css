@@ -1,0 +1,125 @@
+body {
+    font-family: medium-content-title-font, Georgia, Cambria, "Times New Roman", Times, serif
+  }
+  
+  .article {
+    width: 50%;
+    
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .containers {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 576px) {
+    .containers {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .containers {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .containers {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .containers {
+      max-width: 1192px;
+    }
+  }
+  
+  .card {
+    border: 0px;
+  }
+  
+  .card-body {
+    padding: 13px 0px;
+  }
+  
+  .dropdown-menu {
+    min-width: 10rem;
+  }
+  
+  .card1 img{
+    width: auto
+  }
+  
+  .cardBody {
+    padding: 15px 0px;
+  }
+  
+  .popover-body {
+    padding: .5rem 0rem;
+    max-width: 14rem;
+  }
+  
+  .konten {
+    box-shadow: inset 0px 2px 15px rgba(0, 0, 0, 0.11);
+    padding-top: 30px
+  }
+  
+  h1 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  
+  h2 {
+    font-size: 22px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+  }
+  
+  h4 {
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 10px;
+  }
+  
+  h5 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  h6 {
+    font-size: 13px;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  
+  .time {
+    color: #737373;
+  }
+  
+  .DDmenu {
+    padding: .25rem 1.5rem;
+  }
+  
+  .comment {
+    box-shadow: 0 0 4px #888888;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 25px;
+  }
+  
+  #MuiInput-underline:before {
+    border-bottom: none
+  }
