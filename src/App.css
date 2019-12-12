@@ -1,0 +1,121 @@
+.App {
+  font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif
+}
+
+.article {
+  width: 50%;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.containers {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .containers {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .containers {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .containers {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .containers {
+    max-width: 1192px;
+  }
+}
+
+.card {
+  border: 0px;
+}
+
+.card-body {
+  padding: 20px 0px;
+}
+
+.dropdown-menu {
+  min-width: 10rem;
+}
+
+.card1 img{
+  width: auto
+}
+
+.cardBody {
+  padding: 15px 0px;
+}
+
+.popover-body {
+  padding: .5rem 0rem;
+  max-width: 14rem;
+}
+
+.konten {
+  box-shadow: inset 0px 2px 15px rgba(0, 0, 0, 0.11);
+  padding-top: 30px
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 13px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+
+.writerR {
+  color: #6A0BFF;
+}
+
+.DDmenu {
+  padding: .25rem 1.5rem;
+}
+
+.comment {
+  box-shadow: 0 0 4px #888888;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 25px;
+}
+
+#MuiInput-underline:before {
+  border-bottom: none
+}
